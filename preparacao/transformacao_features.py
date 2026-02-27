@@ -25,6 +25,8 @@ df['estado_freq'] = df['estado'].map(estado_freq)
 print("\nDataFrame após condificação de frequencia para 'estado':\n", df.head())
 
 # Interações
+df['interacao_idade_filhos'] = df['idade'] * df['numero_filhos']
 
+print("\nDataFrame após criação de  interações entre 'idae' e 'numero_filhos':\n", df.head())
 
 
